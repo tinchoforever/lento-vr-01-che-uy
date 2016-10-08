@@ -11,14 +11,14 @@
     <meta name="twitter:player" content="">
     <meta name="twitter:player:width" content="600">
     <meta name="twitter:player:height" content="370">
-    
+
     <meta property="og:title" content="La Secta Del Gatillo">
     <meta property="og:url" content="https://miradas360.github.io/miradas360-01/03-Margot">
     <meta property="og:description"  content="El primer corto de realidad virtual filmado en Argentina por Ricardo Ragendorfer y José Campusano">
     <meta property="og:type" content="video" />
     <meta property="og:image" content="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xta1/v/t1.0-9/13697130_304640286537586_9052123618770412300_n.jpg?oh=893048d0a98acb9dd031fd51e405f0b9&oe=586BA367&__gda__=1483557102_43349e3bef528f4838f3d0d55722b05f" />
     <meta property="og:image:seucre_url" content="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xta1/v/t1.0-9/13697130_304640286537586_9052123618770412300_n.jpg?oh=893048d0a98acb9dd031fd51e405f0b9&oe=586BA367&__gda__=1483557102_43349e3bef528f4838f3d0d55722b05f" />
-     
+
     <meta property="og:type" content="video" />
     <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/03-Margot">
     <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/03-Margot">
@@ -40,7 +40,7 @@
        <script src="https://rawgit.com/ngokevin/aframe-event-set-component/v0.2.0/dist/aframe-event-set-component.min.js"></script>
 
     <script src="droid_sans_mono_regular.typeface.js"></script>
-     
+
 
   </head>
   <body>
@@ -50,22 +50,22 @@
       }
     </style>
     <a-scene>
-      <a-assets>  
+      <a-assets>
         <img  id="cardboard" src="img/cardboard.png">
         <img  id="headphones"  src="img/headphones.png">
         <img  id="rotation" src="img/rotation.png">
-  
-        
-    
-        <img id="titulo01" src="img/intro.jpg">
+
+
+
+        <img id="titulo01" src="img/intro2.jpg">
 
         <img  id="aguantadero" src="img/01-Aguantadero.jpg">
         <img  id="auto" src="img/01-Auto.jpeg">
         <img  id="produccion" src="img/Produccion.jpg">
 
-     
 
-        
+
+
       </a-assets>
 
 
@@ -75,17 +75,17 @@
 
 
     <a-image src="#headphones" opacity="0"  position="0 3 -3">
-      <a-animation 
-            attribute="opacity" 
-              from="0" 
-              to="1" 
+      <a-animation
+            attribute="opacity"
+              from="0"
+              to="1"
               begin="0"
               dur="5000">
                </a-animation>
-      <a-animation 
-            attribute="opacity" 
-              from="1" 
-              to="0" 
+      <a-animation
+            attribute="opacity"
+              from="1"
+              to="0"
               begin="5000"
               dur="5000">
                 </a-animation>
@@ -94,7 +94,7 @@
               <a-animation attribute="rotation"
                dur="5000"
                fill="forwards"
-               to="0 360 0" 
+               to="0 360 0"
                repeat="2"></a-animation>
        </a-image>
 
@@ -103,17 +103,17 @@
        >
          <a-animation attribute="visible" begin="10000" to="true"></a-animation>
 
-      <a-animation 
-            attribute="opacity" 
-              from="0" 
-              to="1" 
+      <a-animation
+            attribute="opacity"
+              from="0"
+              to="1"
               begin="10000"
               dur="5000">
                </a-animation>
-      <a-animation 
-            attribute="opacity" 
-              from="1" 
-              to="0" 
+      <a-animation
+            attribute="opacity"
+              from="1"
+              to="0"
               begin="15000"
               dur="5000">
                 </a-animation>
@@ -129,17 +129,17 @@
        <a-image src="#rotation" visibiity="false" opacity="0"  position="0 3 -3">
          <a-animation attribute="visible" begin="20000" to="true"></a-animation>
 
-      <a-animation 
-            attribute="opacity" 
-              from="0" 
-              to="1" 
+      <a-animation
+            attribute="opacity"
+              from="0"
+              to="1"
               begin="20000"
               dur="5000">
                </a-animation>
-      <a-animation 
-            attribute="opacity" 
-              from="1" 
-              to="0" 
+      <a-animation
+            attribute="opacity"
+              from="1"
+              to="0"
               begin="25000"
               dur="5000">
           </a-animation>
@@ -153,85 +153,84 @@
                repeat="3"></a-animation>
        </a-image>
 
-      
 
-  
+
+
 
 <a-plane text="text: Vas a poder moverte libremente todo el tiempo;
- size:0.15" visibiity="false" 
+ size:0.15" visibiity="false"
       mixin="font" opacity="0" color="white" position="-2 2 -3">
         <a-animation attribute="visible" begin="20000" to="true"></a-animation>
-        <a-animation attribute="opacity" from="0" to="1" 
+        <a-animation attribute="opacity" from="0" to="1"
          begin="20000" dur="5000">
         </a-animation>
-         <a-animation attribute="opacity" from="1" to="0" 
+         <a-animation attribute="opacity" from="1" to="0"
          begin="25000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="30000" to="false"></a-animation>
   </a-plane>
-  
+
 
    <a-plane text="text: Coloca tu telefono en el Cardboard;
- size:0.15" 
+ size:0.15"
       mixin="font" opacity="0" visibiity="false" color="white" position="-1.75 2 -3">
         <a-animation attribute="visible" begin="10000" to="true"></a-animation>
-        <a-animation attribute="opacity" from="0" to="1" 
+        <a-animation attribute="opacity" from="0" to="1"
          begin="10000" dur="5000">
         </a-animation>
-         <a-animation attribute="opacity" from="1" to="0" 
+         <a-animation attribute="opacity" from="1" to="0"
          begin="15000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="20000" to="false"></a-animation>
 
       </a-plane>
-       
+
        <a-plane text="text: Ponete auriculares para una mejor experiencia;
- size:0.15" 
+ size:0.15"
       mixin="font" opacity="0" visibiity="false" color="white" position="-2.25 2 -3">
         <a-animation attribute="opacity" from="0" to="1" dur="5000">
         </a-animation>
-         <a-animation attribute="opacity" from="1" to="0" 
+         <a-animation attribute="opacity" from="1" to="0"
          begin="5000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="10000" to="false"></a-animation>
       </a-plane>
 
        <a-image src="#titulo01" opacity="0"  look-at="#miradas-cam"
-          visibility="false"  position="0 2 -3"
-               scale="1 1 1" >
+          visibility="false"  position="0 2 -260" width="480" height="300">
         <a-animation attribute="opacity" from="0" to="1" begin="30000" dur="5000">
         </a-animation>
-        
+
          <a-animation attribute="opacity" from="1" to="0"
          begin="35000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="40000" to="false"></a-animation>
        </a-image>
 
-      
+
 
 
       <!-- Cielos -->
       <a-sky  src="#aguantadero" opacity="0" visibility="false" rotation="0 -75 0">
               <a-animation attribute="visible" begin="40000" to="true" id="firstPlay"></a-animation>
-              <a-animation attribute="opacity" from="0" to="1" 
+              <a-animation attribute="opacity" from="0" to="1"
                begin="40000" dur="5000">
               </a-animation>
-               <a-animation attribute="opacity" from="1" to="0" 
+               <a-animation attribute="opacity" from="1" to="0"
                begin="50000" dur="5000">
              </a-animation>
              <a-animation attribute="visible" begin="55000" to="false"></a-animation>
 
     </a-sky>
-   
+
       <a-sky  src="#auto" opacity="0" rotation="0 -75 0">
 
               <a-animation attribute="visible" begin="55000" to="true"></a-animation>
-              <a-animation id="devotoPlay" attribute="opacity" from="0" to="1" 
+              <a-animation id="devotoPlay" attribute="opacity" from="0" to="1"
                begin="55000" dur="5000">
               </a-animation>
               <a-animation id="boschPlay"  attribute="visible" begin="70000" to="true"></a-animation>
-               <a-animation attribute="opacity" from="1" to="0" 
+               <a-animation attribute="opacity" from="1" to="0"
                begin="70000" dur="5000">
              </a-animation>
              <a-animation attribute="visible" begin="75000" to="false"></a-animation>
@@ -240,15 +239,16 @@
       <a-sky  src="#produccion" opacity="0" rotation="0 -75 0">
 
               <a-animation attribute="visible" begin="75000" to="true"></a-animation>
-              <a-animation id="devotoPlay" attribute="opacity" from="0" to="1" 
+              <a-animation id="devotoPlay" attribute="opacity" from="0" to="1"
                begin="75000" dur="5000">
               </a-animation>
               <a-animation id="boschPlay"  attribute="visible" begin="85000" to="true"></a-animation>
-               <a-animation attribute="opacity" from="1" to="0" 
+               <a-animation attribute="opacity" from="1" to="0"
                begin="85000" dur="5000">
              </a-animation>
              <a-animation attribute="visible" begin="95000" to="false"></a-animation>
     </a-sky>
+
 
       <a-entity id="fondo" geometry="primitive: plane" material="color: transparent"  look-at="#miradas-cam"
  sound="src:fondo.mp3; loop:true;autoplay:true;volume:0.2;" position="0 1.8 1.5"></a-entity> 
@@ -256,6 +256,12 @@
       <a-entity id="first" geometry="primitive: plane" material="color: transparent"  position="0 1.8 1.5" look-at="#miradas-cam"sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
       <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
 
+
+
+
+      <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
+
+  
       </a-camera>
     </a-scene>
   </body>
@@ -271,4 +277,3 @@
 
 </script>
 </html>
-
