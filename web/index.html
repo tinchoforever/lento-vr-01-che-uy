@@ -13,7 +13,7 @@
     <meta name="twitter:player" content="https://miradas360.github.io/miradas360-01/04-Eternauta/index.html">
     <meta name="twitter:player:width" content="600">
     <meta name="twitter:player:height" content="370">
-    
+
     <meta property="og:title" content="Miradas 360 #S01E04 - El último viaje del Eternauta">
     <meta property="og:url" content="https://miradas360.github.io/miradas360-01/04-Eternauta">
     <meta property="og:description"  content="Un viaje a la eternidad de Oesterheld.
@@ -21,7 +21,7 @@
     <meta property="og:type" content="video" />
     <meta property="og:image" content="https://miradas360.github.io/miradas360-01/images/posters/04-eternauta.jpg" />
     <meta property="og:image:seucre_url" content="https://miradas360.github.io/miradas360-01/images/posters/04-eternauta.jpg" />
-     
+
     <meta property="og:type" content="video" />
     <meta property="og:video:url" content="https://miradas360.github.io/miradas360-01/04-Eternauta">
     <meta property="og:video:secure_url" content="https://miradas360.github.io/miradas360-01/04-Eternauta">
@@ -34,17 +34,17 @@
     <meta property="og:video:type" content="application/x-shockwave-flash">
     <meta property="og:video:width" content="560">
     <meta property="og:video:height" content="395">
-     
+
 
     <meta name="description" content="Un viaje a la eternidad de Oesterheld.
     por Carolina Cerri, Leonardo Gentile, Martín Rabaglia y María Laura Ruggero">
 
     <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-     <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
-       <script src="https://rawgit.com/ngokevin/aframe-event-set-component/v0.2.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-event-set-component/v0.2.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="droid_sans_mono_regular.typeface.js"></script>
 
-     <script src="Muli_Regular.js"></script>
-     
+    <script src="Muli_Regular.js"></script>
 
   </head>
   <body>
@@ -54,18 +54,18 @@
       }
     </style>
     <a-scene>
-      <a-assets>  
+      <a-assets>
         <img  id="cardboard" src="img/cardboard.png">
         <img  id="headphones"  src="img/headphones.png">
         <img  id="rotation" src="img/rotation.png">
-  
-        
-    
+
+
+
         <img id="titulo01" src="img/intro.jpg">
 
         <img  id="beccar" src="img/01-Aguantadero.jpg">
         <img  id="noche" src="img/02-01-devoto-4.jpg">
-     
+
 
         <a-mixin id="font" text="font: Muli"></a-mixin>
       </a-assets>
@@ -77,17 +77,17 @@
 
 
     <a-image src="#headphones" opacity="0"  position="0 3 -3">
-      <a-animation 
-            attribute="opacity" 
-              from="0" 
-              to="1" 
+      <a-animation
+            attribute="opacity"
+              from="0"
+              to="1"
               begin="0"
               dur="5000">
                </a-animation>
-      <a-animation 
-            attribute="opacity" 
-              from="1" 
-              to="0" 
+      <a-animation
+            attribute="opacity"
+              from="1"
+              to="0"
               begin="5000"
               dur="5000">
                 </a-animation>
@@ -96,7 +96,7 @@
               <a-animation attribute="rotation"
                dur="5000"
                fill="forwards"
-               to="0 360 0" 
+               to="0 360 0"
                repeat="2"></a-animation>
        </a-image>
 
@@ -105,17 +105,17 @@
        >
          <a-animation attribute="visible" begin="10000" to="true"></a-animation>
 
-      <a-animation 
-            attribute="opacity" 
-              from="0" 
-              to="1" 
+      <a-animation
+            attribute="opacity"
+              from="0"
+              to="1"
               begin="10000"
               dur="5000">
                </a-animation>
-      <a-animation 
-            attribute="opacity" 
-              from="1" 
-              to="0" 
+      <a-animation
+            attribute="opacity"
+              from="1"
+              to="0"
               begin="15000"
               dur="5000">
                 </a-animation>
@@ -131,17 +131,17 @@
        <a-image src="#rotation" visibiity="false" opacity="0"  position="0 3 -3">
          <a-animation attribute="visible" begin="20000" to="true"></a-animation>
 
-      <a-animation 
-            attribute="opacity" 
-              from="0" 
-              to="1" 
+      <a-animation
+            attribute="opacity"
+              from="0"
+              to="1"
               begin="20000"
               dur="5000">
                </a-animation>
-      <a-animation 
-            attribute="opacity" 
-              from="1" 
-              to="0" 
+      <a-animation
+            attribute="opacity"
+              from="1"
+              to="0"
               begin="25000"
               dur="5000">
           </a-animation>
@@ -155,44 +155,44 @@
                repeat="3"></a-animation>
        </a-image>
 
-      
 
-  
+
+
 
 <a-plane text="text: Vas a poder moverte libremente todo el tiempo;
- size:0.15" visibiity="false" 
+ size:0.15" visibiity="false"
       mixin="font" opacity="0" color="white" position="-2 2 -3">
         <a-animation attribute="visible" begin="20000" to="true"></a-animation>
-        <a-animation attribute="opacity" from="0" to="1" 
+        <a-animation attribute="opacity" from="0" to="1"
          begin="20000" dur="5000">
         </a-animation>
-         <a-animation attribute="opacity" from="1" to="0" 
+         <a-animation attribute="opacity" from="1" to="0"
          begin="25000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="30000" to="false"></a-animation>
   </a-plane>
-  
+
 
    <a-plane text="text: Coloca tu telefono en el Cardboard;
- size:0.15" 
+ size:0.15"
       mixin="font" opacity="0" visibiity="false" color="white" position="-1.75 2 -3">
         <a-animation attribute="visible" begin="10000" to="true"></a-animation>
-        <a-animation attribute="opacity" from="0" to="1" 
+        <a-animation attribute="opacity" from="0" to="1"
          begin="10000" dur="5000">
         </a-animation>
-         <a-animation attribute="opacity" from="1" to="0" 
+         <a-animation attribute="opacity" from="1" to="0"
          begin="15000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="20000" to="false"></a-animation>
 
       </a-plane>
-       
+
        <a-plane text="text: Ponete auriculares para una mejor experiencia;
- size:0.15" 
+ size:0.15"
       mixin="font" opacity="0" visibiity="false" color="white" position="-2.25 2 -3">
         <a-animation attribute="opacity" from="0" to="1" dur="5000">
         </a-animation>
-         <a-animation attribute="opacity" from="1" to="0" 
+         <a-animation attribute="opacity" from="1" to="0"
          begin="5000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="10000" to="false"></a-animation>
@@ -209,46 +209,46 @@
        <a-animation attribute="visible" begin="40000" to="false"></a-animation>
        </a-image>
 
-      
+
 
 
       <!-- Cielos -->
       <a-sky  src="#beccar" opacity="0" visibility="false" rotation="0 -75 0">
               <a-animation attribute="visible" begin="55000" to="true"></a-animation>
-              <a-animation attribute="opacity" from="0" to="1" 
+              <a-animation attribute="opacity" from="0" to="1"
                begin="55000" dur="5000">
               </a-animation>
-               <a-animation attribute="opacity" from="1" to="0" 
+               <a-animation attribute="opacity" from="1" to="0"
                begin="135000" dur="5000">
              </a-animation>
              <a-animation attribute="visible" begin="140000" to="false"></a-animation>
 
     </a-sky>
-   
+
       <a-sky  src="#noche" opacity="0" rotation="0 -75 0">
 
               <a-animation attribute="visible" begin="140000" to="true"></a-animation>
-              <a-animation id="devotoPlay" attribute="opacity" from="0" to="1" 
+              <a-animation id="devotoPlay" attribute="opacity" from="0" to="1"
                begin="140000" dur="5000">
               </a-animation>
               <a-animation id="boschPlay"  attribute="visible" begin="165000" to="true"></a-animation>
-               <a-animation attribute="opacity" from="1" to="0" 
+               <a-animation attribute="opacity" from="1" to="0"
                begin="170000" dur="5000">
              </a-animation>
              <a-animation attribute="visible" begin="175000" to="false"></a-animation>
     </a-sky>
 
 
-      
+
       <a-camera id="miradas-cam" position="0 1.8 1.5">
 
-<!-- 
+<!--
        <a-entity id="first" geometry="primitive: plane" material="color: blue"  sound="src:01-beccar.mp3; loop:false; on:playfirst"></a-entity>
  <a-entity id="bosch" geometry="primitive: plane" material="color: blue" sound="src:03-bosch.mp3; loop:false; on:playbosch"></a-entity>
  <a-entity id="adios" geometry="primitive: plane" material="color: blue" sound="src:04-adios.mp3; loop:false; on:playadios"></a-entity>
  <a-entity id="devoto" geometry="primitive: plane" material="color: blue"  sound="src:02-01-devoto.mp3; loop:false; on:playdevoto"></a-entity>
  <a-entity id="soundtrack" geometry="primitive: plane" material="color: blue"  sound="src:soundtrack.mp4; loop:true;autoplay:true;"></a-entity>  -->
-      
+
 
 
       </a-camera>
@@ -266,4 +266,3 @@
 
 </script>
 </html>
-
