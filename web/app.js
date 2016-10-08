@@ -24,7 +24,7 @@ function render(){
     requestAnimationFrame(render);
     u_time++;
     //----------------------------------------------------------//
-
+    // console.log(u_time)
     if(u_time>4300 && u_time<5700){
 
         for (var i = 0; i < fotos_ent.length; i++) {
