@@ -120,7 +120,7 @@
         <a-animation attribute="visible" begin="22000"   to="false"></a-animation>
         <a-animation attribute="rotation" begin="16000" dur="5000" fill="forwards" to="0 360 0" repeat="3"></a-animation>
     </a-image>
-    
+
     <a-image src="#rotation" visibiity="false" opacity="0"  position="0 3 -3">
       <a-animation attribute="visible" begin="22000" to="true"></a-animation>
       <a-animation attribute="opacity" from="0" to="1" begin="22000" dur="3000"> </a-animation>
@@ -206,26 +206,24 @@
             <a-animation attribute="opacity" from="0" to="1"
                begin="100000" dur="5000">
               </a-animation>
-              <a-animation attribute="visible" begin="150000" to="true"></a-animation>
+              <a-animation attribute="visible" begin="100000" to="true"></a-animation>
+              <a-animation attribute="opacity" from="1" to="0"begin="150000" dur="5000">
+             </a-animation>
+              <a-animation attribute="visible" begin="155000" to="false"></a-animation>
     </a-sky>
-      <a-sky  src="#equipo-web" opacity="0" rotation="0 -75 0" visible="false">
+    
+    <a-sky  src="#equipo-web" opacity="0" rotation="0 -75 0" visible="false">
             <a-animation attribute="opacity" from="0" to="1"
                begin="150000" dur="5000">
               </a-animation>
               <a-animation attribute="visible" begin="150000" to="true"></a-animation>
     </a-sky>
-      
 
 
       <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
-        <a-entity id="fondo" geometry="primitive: plane" material="color: transparent"  look-at="#miradas-cam"
- sound="src:fondo.mp3; loop:true;autoplay:true;volume:0.2;" position="0 1.8 1.5"></a-entity>
-       <a-entity id="soundtrack" geometry="primitive: plane" material="color: transparent" look-at="#miradas-cam" sound="src:soundtrack.mp3; loop:true;autoplay:true;volume:0.2;"  position="0 1.8 1.5"></a-entity>
-      <a-entity id="first" geometry="primitive: plane" material="color: transparent"  position="0 1.8 1.5" look-at="#miradas-cam"sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
-      <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
-
-
-      </a-camera>
+      <a-entity id="fondo" geometry="primitive: plane" material="color: transparent"  look-at="#miradas-cam" sound="src:fondo.mp3; loop:true;autoplay:true;volume:0.2;" position="0 0 1"></a-entity>
+      <a-entity id="soundtrack" geometry="primitive: plane" material="color: transparent" look-at="#miradas-cam" sound="src:soundtrack.mp3; loop:true;autoplay:true;volume:0.2;"  position="0 0 1"></a-entity>
+      <a-entity id="first" geometry="primitive: plane" material="color: transparent"  position="0 0 1" look-at="#miradas-cam"sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
     </a-scene>
   </body>
      <script src="app.js"></script>
