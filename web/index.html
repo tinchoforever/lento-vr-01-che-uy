@@ -250,22 +250,11 @@
              <a-animation attribute="visible" begin="95000" to="false"></a-animation>
     </a-sky>
 
-
-      
+      <a-entity id="fondo" geometry="primitive: plane" material="color: transparent"  look-at="#miradas-cam"
+ sound="src:fondo.mp3; loop:true;autoplay:true;volume:0.2;" position="0 1.8 1.5"></a-entity> 
+       <a-entity id="soundtrack" geometry="primitive: plane" material="color: transparent" look-at="#miradas-cam" sound="src:soundtrack.mp3; loop:true;autoplay:true;volume:0.2;"  position="0 1.8 1.5"></a-entity> 
+      <a-entity id="first" geometry="primitive: plane" material="color: transparent"  position="0 1.8 1.5" look-at="#miradas-cam"sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
       <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
-
-
-       <a-entity id="first" geometry="primitive: plane" material="color: blue"  sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
-   <!--   
- <a-entity id="bosch" geometry="primitive: plane" material="color: blue" sound="src:03-bosch.mp3; loop:false; on:playbosch"></a-entity>
- <a-entity id="adios" geometry="primitive: plane" material="color: blue" sound="src:04-adios.mp3; loop:false; on:playadios"></a-entity>
- <a-entity id="devoto" geometry="primitive: plane" material="color: blue"  sound="src:02-01-devoto.mp3; loop:false; on:playdevoto"></a-entity> -->
-
- <a-entity id="fondo" geometry="primitive: plane" material="color: blue"  
- sound="src:fondo.mp3; loop:true;autoplay:true;"></a-entity> 
- <a-entity id="soundtrack" geometry="primitive: plane" material="color: blue"  sound="src:soundtrack.mp3; loop:true;autoplay:true;"></a-entity> 
-      
-
 
       </a-camera>
     </a-scene>
