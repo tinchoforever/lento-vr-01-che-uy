@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     render();
 });
 
-var radio = 2.25;
+var radio = 2.1;
 var scene_opacity = 0;
 var moving = false;
 
