@@ -45,12 +45,24 @@
   </head>
   <body>
     <style>
-      html{
-        background: #000;
-      }
-      *:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
-        background-color: rgba(0,0,0,0);
-      }
+    html{
+    background: #000;
+    }
+    :-webkit-full-screen {
+    background:  #000;
+    }
+
+    :-moz-full-screen {
+    background:  #000;
+    }
+
+    :-ms-fullscreen {
+    background:  #000;
+    }
+
+    :fullscreen {
+    background:  #000;
+    }
     </style>
     <a-scene>
       <a-assets>
@@ -248,7 +260,7 @@
              <a-animation attribute="visible" begin="75000" to="false"></a-animation>
     </a-sky>
 
-   
+
 
         <a-plane id="plano00" class="foto" src="#textura00" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
         <a-plane id="plano01" class="foto" src="#textura01" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
@@ -269,8 +281,8 @@
               </a-animation>
     </a-sky>
       <a-entity id="fondo" geometry="primitive: plane" material="color: transparent"  look-at="#miradas-cam"
- sound="src:fondo.mp3; loop:true;autoplay:true;volume:0.2;" position="0 1.8 1.5"></a-entity> 
-       <a-entity id="soundtrack" geometry="primitive: plane" material="color: transparent" look-at="#miradas-cam" sound="src:soundtrack.mp3; loop:true;autoplay:true;volume:0.2;"  position="0 1.8 1.5"></a-entity> 
+ sound="src:fondo.mp3; loop:true;autoplay:true;volume:0.2;" position="0 1.8 1.5"></a-entity>
+       <a-entity id="soundtrack" geometry="primitive: plane" material="color: transparent" look-at="#miradas-cam" sound="src:soundtrack.mp3; loop:true;autoplay:true;volume:0.2;"  position="0 1.8 1.5"></a-entity>
       <a-entity id="first" geometry="primitive: plane" material="color: transparent"  position="0 1.8 1.5" look-at="#miradas-cam"sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
       <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
 
@@ -279,7 +291,7 @@
 
       <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
 
-  
+
       </a-camera>
     </a-scene>
   </body>
