@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     render();
 });
 
-var radio = 3.5;
+var radio = 2.25;
 var scene_opacity = 0;
 var moving = false;
 
@@ -25,8 +25,8 @@ function render(){
     requestAnimationFrame(render);
     u_time++;
     //----------------------------------------------------------//
-    // console.log(u_time)
-    if(u_time>4300 && u_time<5700){
+    console.log(u_time);
+    if(u_time>3500 && u_time<6000){
 
         for (var i = 0; i < fotos_ent.length; i++) {
 
@@ -82,12 +82,12 @@ var createPlayerFor = function(selector){
 
     };
     playerAnimationTrigger.addEventListener('animationend',mainEventPlay);
-}
+};
 
 
 
 var players = ['first'];
 for (var i = 0; i < players.length; i++) {
     createPlayerFor(players[i]);
-};
+}
 
