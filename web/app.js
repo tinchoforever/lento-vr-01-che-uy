@@ -18,11 +18,42 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 var radio = 2;
+var scene_opacity = 0;
 
 function render(){
     requestAnimationFrame(render);
     u_time++;
     //----------------------------------------------------------//
+
+    if(u_time>4300 && u_time<5700){
+
+        for (var i = 0; i < fotos_ent.length; i++) {
+            fotos_ent[i].setAttribute('visible', true);
+
+
+
+            if(u_time>4300 && u_time<4500){
+                scene_opacity = scene_opacity + 0.005;
+                fotos_ent[i].setAttribute('opacity', scene_opacity);
+            }
+
+            if(u_time>5500 && u_time<5700){
+                scene_opacity = scene_opacity - 0.005;
+                fotos_ent[i].setAttribute('opacity', scene_opacity);
+            }
+
+        }
+
+
+
+    }else{
+        for (var i = 0; i < fotos_ent.length; i++) {
+            fotos_ent[i].setAttribute('visible', false);
+        }
+    }
+
+
+
 
 
     for (var i = 0; i < fotos_ent.length; i++) {
@@ -37,20 +68,20 @@ function render(){
 }
 
 var createPlayerFor = function(selector){
-	var playSelector = selector + 'Play';
-	var audioToPlay = document.querySelector('#' + selector);
-	var playerAnimationTrigger = document.querySelector('#' + playSelector);
-	var mainEventPlay = function(){
-		audioToPlay.emit('play' + selector);
-		
-	};
-	playerAnimationTrigger.addEventListener('animationend',mainEventPlay);
+    var playSelector = selector + 'Play';
+    var audioToPlay = document.querySelector('#' + selector);
+    var playerAnimationTrigger = document.querySelector('#' + playSelector);
+    var mainEventPlay = function(){
+        audioToPlay.emit('play' + selector);
+
+    };
+    playerAnimationTrigger.addEventListener('animationend',mainEventPlay);
 }
 
 
 
 var players = ['first'];
 for (var i = 0; i < players.length; i++) {
-	createPlayerFor(players[i]);
+    createPlayerFor(players[i]);
 };
 
