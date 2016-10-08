@@ -61,7 +61,7 @@
 
         <img  id="aguantadero" src="img/01-Aguantadero.jpg">
         <img  id="auto" src="img/01-Auto.jpeg">
-        <img  id="produccion" src="img/Produccion">
+        <img  id="produccion" src="img/Produccion.jpg">
 
      
 
@@ -197,11 +197,12 @@
       </a-plane>
 
        <a-image src="#titulo01" opacity="0"  look-at="#miradas-cam"
-          visibility="false" width="10" height="5" position="0 2 -3"
+          visibility="false"  position="0 2 -3"
                scale="1 1 1" >
         <a-animation attribute="opacity" from="0" to="1" begin="30000" dur="5000">
         </a-animation>
-         <a-animation attribute="opacity" from="1" to="0"  id="firstPlay"
+        
+         <a-animation attribute="opacity" from="1" to="0"
          begin="35000" dur="5000">
        </a-animation>
        <a-animation attribute="visible" begin="40000" to="false"></a-animation>
@@ -212,54 +213,57 @@
 
       <!-- Cielos -->
       <a-sky  src="#aguantadero" opacity="0" visibility="false" rotation="0 -75 0">
-              <a-animation attribute="visible" begin="40000" to="true"></a-animation>
+              <a-animation attribute="visible" begin="40000" to="true" id="firstPlay"></a-animation>
               <a-animation attribute="opacity" from="0" to="1" 
                begin="40000" dur="5000">
               </a-animation>
                <a-animation attribute="opacity" from="1" to="0" 
-               begin="135000" dur="5000">
+               begin="50000" dur="5000">
              </a-animation>
-             <a-animation attribute="visible" begin="140000" to="false"></a-animation>
+             <a-animation attribute="visible" begin="55000" to="false"></a-animation>
 
     </a-sky>
    
-      <a-sky  src="#autonn" opacity="0" rotation="0 -75 0">
+      <a-sky  src="#auto" opacity="0" rotation="0 -75 0">
 
-              <a-animation attribute="visible" begin="140000" to="true"></a-animation>
+              <a-animation attribute="visible" begin="55000" to="true"></a-animation>
               <a-animation id="devotoPlay" attribute="opacity" from="0" to="1" 
-               begin="140000" dur="5000">
+               begin="55000" dur="5000">
               </a-animation>
-              <a-animation id="boschPlay"  attribute="visible" begin="165000" to="true"></a-animation>
+              <a-animation id="boschPlay"  attribute="visible" begin="70000" to="true"></a-animation>
                <a-animation attribute="opacity" from="1" to="0" 
-               begin="170000" dur="5000">
+               begin="70000" dur="5000">
              </a-animation>
-             <a-animation attribute="visible" begin="175000" to="false"></a-animation>
+             <a-animation attribute="visible" begin="75000" to="false"></a-animation>
     </a-sky>
 
       <a-sky  src="#produccion" opacity="0" rotation="0 -75 0">
 
-              <a-animation attribute="visible" begin="175000" to="true"></a-animation>
+              <a-animation attribute="visible" begin="75000" to="true"></a-animation>
               <a-animation id="devotoPlay" attribute="opacity" from="0" to="1" 
-               begin="175000" dur="5000">
+               begin="75000" dur="5000">
               </a-animation>
-              <a-animation id="boschPlay"  attribute="visible" begin="195000" to="true"></a-animation>
+              <a-animation id="boschPlay"  attribute="visible" begin="85000" to="true"></a-animation>
                <a-animation attribute="opacity" from="1" to="0" 
-               begin="195000" dur="5000">
+               begin="85000" dur="5000">
              </a-animation>
-             <a-animation attribute="visible" begin="200000" to="false"></a-animation>
+             <a-animation attribute="visible" begin="95000" to="false"></a-animation>
     </a-sky>
 
 
       
       <a-camera id="miradas-cam" camera universal-controls mouse-controls position="0 1.8 1.5">
 
-<!-- 
-       <a-entity id="first" geometry="primitive: plane" material="color: blue"  sound="src:01-beccar.mp3; loop:false; on:playfirst"></a-entity>
+
+       <a-entity id="first" geometry="primitive: plane" material="color: blue"  sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
+   <!--   
  <a-entity id="bosch" geometry="primitive: plane" material="color: blue" sound="src:03-bosch.mp3; loop:false; on:playbosch"></a-entity>
  <a-entity id="adios" geometry="primitive: plane" material="color: blue" sound="src:04-adios.mp3; loop:false; on:playadios"></a-entity>
  <a-entity id="devoto" geometry="primitive: plane" material="color: blue"  sound="src:02-01-devoto.mp3; loop:false; on:playdevoto"></a-entity> -->
- 
- <a-entity id="soundtrack" geometry="primitive: plane" material="color: blue"  sound="src:Soundtrack.mp3; loop:true;autoplay:true;"></a-entity> 
+
+ <a-entity id="fondo" geometry="primitive: plane" material="color: blue"  
+ sound="src:fondo.mp3; loop:true;autoplay:true;"></a-entity> 
+ <a-entity id="soundtrack" geometry="primitive: plane" material="color: blue"  sound="src:soundtrack.mp3; loop:true;autoplay:true;"></a-entity> 
       
 
 
