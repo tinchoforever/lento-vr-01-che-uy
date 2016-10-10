@@ -23,17 +23,17 @@ La mejor forma de mostrar esta experiencia es que la web sea 360 como la pelícu
 
 ##Diseño, Guión y Presentación
 
-Anahí Genari / anahi@genosha.com.ar
-Diego Gennaro /  gennaro.diego@gmail.com 
-Andrés Olivera /  andres@creativistas.com.ar   
-Adrián Pino / pinocomunicaciones@gmail.com 
-Ulises Siriczman /   usiriczman@gmail.com
-Alan Verrua /   alan@creativistas.com.ar  
-Darío Sbaffi  / dario.redhot.leon@gmail.com
+- Anahí Genari / anahi@genosha.com.ar
+- Gabriel Gonzalez / gabriel2kx@gmail.com 
+- Andrés Olivera /  andres@creativistas.com.ar   
+- Adrián Pino / pinocomunicaciones@gmail.com 
+- Ulises Siriczman /   usiriczman@gmail.com
+- Alan Verrua /   alan@creativistas.com.ar  
+- Darío Sbaffi  / dario.redhot.leon@gmail.com
 
 
 #Desarrollo y montaje web 360.
 
-Martín Rabaglia / tincho@genosha.com.ar  
-Gabriel Gonzalez / gabriel2kx@gmail.com 
-Nahuel de Nec Necsoft / necsoftdesign@gmail.com 
+- Martín Rabaglia / tincho@genosha.com.ar  
+- Diego Gennaro /  gennaro.diego@gmail.com 
+- Nahuel de Nec Necsoft / necsoftdesign@gmail.com 
