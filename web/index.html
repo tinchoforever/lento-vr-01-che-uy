@@ -2,29 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>La Secta Del Gatillo</title>
-    <meta name="twitter:card" content="player">
-    <meta name="twitter:site" content="@sectadelgatillo">
-    <meta name="twitter:title" content="La Secta Del Gatillo">
-    <meta name="twitter:description" content="La primer experiecia 360 José Celestino Campusano. La Secta Del Gatillo es un relato que aborda la naturalización de la violencia y de la corrupción judicial y policial en ciertas comisarías del conurbano bonaerense.">
-    <meta name="twitter:image" content="https://pbs.twimg.com/profile_images/753661703037091844/AJfzupbI.jpg">
-    <!-- <meta name="twitter:player" content=""> -->
-    <meta name="twitter:player:width" content="600">
-    <meta name="twitter:player:height" content="370">
-
-    <meta property="og:title" content="La Secta Del Gatillo">
-    <meta property="og:url" content="http://sectadelgatillo.com.ar">
-    <meta property="og:description"  content="La primer experiecia 360 José Celestino Campusano. La Secta Del Gatillo es un relato que aborda la naturalización de la violencia y de la corrupción judicial y policial en ciertas comisarías del conurbano bonaerense.">
-    <meta property="og:type" content="video" />
-    <meta property="og:image" content="https://pbs.twimg.com/profile_images/753661703037091844/AJfzupbI.jpg" />
-    <meta property="og:image:seucre_url" content="https://pbs.twimg.com/profile_images/753661703037091844/AJfzupbI.jpg" />
-
-
-
-   
-
-    <meta name="description" content="La primer experiecia 360 José Celestino Campusano. La Secta Del Gatillo es un relato que aborda la naturalización de la violencia y de la corrupción judicial y policial en ciertas comisarías del conurbano bonaerense. #LSDG">
-
+    <title>Lento VR - 01 - El Che </title>
+    
     <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.17.0/dist/aframe-extras.min.js"></script>
 
@@ -62,23 +41,13 @@
         <img  id="headphones"  src="img/headphones.png">
         <img  id="rotation" src="img/rotation.png">
 
-        <img id="textura00" src="img/instagram/0.jpg">
-        <img id="textura01" src="img/instagram/1.jpg">
-        <img id="textura02" src="img/instagram/2.jpg">
-        <img id="textura03" src="img/instagram/3.jpg">
-        <img id="textura04" src="img/instagram/4.jpg">
-        <img id="textura05" src="img/instagram/5.jpg">
-        <img id="textura06" src="img/instagram/6.jpg">
-        <img id="textura07" src="img/instagram/7.jpg">
-        <img id="textura08" src="img/instagram/8.jpg">
-        <img id="textura09" src="img/instagram/9.jpg">
 
-        <img id="titulo01" src="img/intro2.jpg">
+        <img id="titulo01" src="img/intro2.png">
 
-        <img  id="aguantadero" src="img/01-Aguantadero.jpg">
-        <img  id="auto" src="img/01-Auto.jpeg">
-        <img  id="produccion" src="img/Produccion.jpg">
-        <img  id="equipo-web" src="img/equipo-web.jpg">
+        <img  id="aguantadero" src="img/360/PaulaBermudezGodoy1130-Pasodelos Toros-Uy.png">
+        <img  id="auto" src="img/360/AeropuertoElAlto-Bolvia.png">
+        <img  id="produccion" src="img/360/CineRex-Tacuarembo-Uy.png">
+        <img  id="equipo-web" src="img/360/PaulaBermudezGodoy1130-Pasodelos Toros-Uy.png">
 
 
 
@@ -89,7 +58,7 @@
 
 
 
-    <a-image src="#titulo01" opacity="0"  look-at="#miradas-cam" position="0 2 -260" width="480" height="300">
+    <a-image src="#titulo01" opacity="0"  look-at="#miradas-cam" position="0 2 -800" width="746" height="1068">
         <a-animation attribute="opacity" from="0" to="1" begin="0" dur="5000"> </a-animation>
         <a-animation attribute="opacity" from="1" to="0" begin="5000" dur="5000"> </a-animation>
         <a-animation attribute="visible" begin="10000" to="false"></a-animation>
@@ -178,7 +147,7 @@
        <a-animation attribute="visible" begin="62000" to="false"></a-animation>
     </a-sky>
 
-
+<!-- 
 
         <a-plane id="plano00" class="foto" src="#textura00" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
         <a-plane id="plano01" class="foto" src="#textura01" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
@@ -189,7 +158,7 @@
         <a-plane id="plano06" class="foto" src="#textura06" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
         <a-plane id="plano07" class="foto" src="#textura07" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
         <a-plane id="plano08" class="foto" src="#textura08" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
-        <a-plane id="plano09" class="foto" src="#textura09" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane>
+        <a-plane id="plano09" class="foto" src="#textura09" color="#FFF" height="1" width="1" position="0 1.6 -1"  look-at="[camera]"></a-plane> -->
 
       <a-sky  src="#produccion" opacity="0" rotation="0 -75 0" visible="false">
             <a-animation attribute="opacity" from="0" to="1"
@@ -215,7 +184,7 @@
       <a-entity id="first" geometry="primitive: plane" material="color: transparent"  position="0 0 1" look-at="#miradas-cam"sound="src:trailer-voz.mp3; loop:false; on:playfirst"></a-entity>
     </a-scene>
   </body>
-     <script src="app.js"></script>
+     <!-- <script src="app.js"></script> -->
      <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
